@@ -29,7 +29,7 @@ app = FastAPI()
 OUTPUT_DIR = Path("processed_images")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-
+# Route for endpoint
 @app.post("/api/v1/tryon")
 async def virtual_tryon(
     request: TryOnRequest, 
